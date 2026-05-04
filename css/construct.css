@@ -1,0 +1,415 @@
+@font-face {
+  font-family: 'Pristina';
+  src: url('../fonts/Pristina.ttf');
+  src: url('../fonts/Pristina.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf');
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato Light';
+  src: url('../fonts/Lato-Light.ttf');
+  src: url('../fonts/Lato-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato Black';
+  src: url('../fonts/Lato-Black.ttf');
+  src: url('../fonts/Lato-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('../fonts/Lato-Hairline.ttf');
+  src: url('../fonts/Lato-Hairline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	font-family: "Lato";
+	color: black;
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 12pt;
+	min-height: 100vh;
+	background-color: #f8f8f8;
+	background-image: url('../img/overlay.png');
+	background-repeat: repeat;
+	background-position: top left;
+}
+.page-standard {
+	/* lupa ini buat apaan ya
+	padding-bottom: 180px;
+	*/
+}
+.page-home {
+	min-height: calc(100vh - 180px);
+}
+.page-content {
+	padding-top: 30px;
+}
+.icon {
+	display: none;
+}
+
+.bodyborder {
+	position: fixed;
+	z-index: -99;
+	width: 95%;
+	height: 95%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 1px solid rgba(0,0,0,.2);
+}
+a, a:active, a:link {
+	font-family: inherit;
+	font-weight: bold;
+	color: gray;
+	-webkit-transition: all 1s ease-in-out;
+	   -moz-transition: all 1s ease-in-out;
+	    -ms-transition: all 1s ease-in-out;
+	     -o-transition: all 1s ease-in-out;
+	        transition: all 1s ease-in-out;
+}
+a:hover {
+	color: black;
+}
+hr {
+	height: 1px;
+	background-color: #000;
+	border: 0px solid black;
+	margin: 5px;
+	padding: 0px;
+}
+h1 {
+	font-family: 'Lato Black';
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 72px;
+}
+big {
+	font-size: 100%;
+}
+.floated {
+	position: absolute;
+	top: 70px;
+	left: 62px; 
+}
+.wrapper {
+		display: inline-block;
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    width: 700px;
+	    height: 200px;
+	    margin: auto;
+}
+.Message {
+	font-family: 'Pristina';
+	line-height: 1;
+	font-size: 40px;
+}
+.menu {
+	font-size: 36px;
+	font-family: 'Lato Hairline';
+	border-bottom: 1px solid black;
+}
+.menu li {
+	float: right;
+	list-style: none;
+	display: inline-block;
+	border-bottom: 1px solid black;
+}
+li a, li a:active, li a:link {
+	display: block;
+	padding: 20px;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	color: black;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-transition: background-color .35s ease, color .35s ease;
+	   -moz-transition: background-color .35s ease, color .35s ease;
+	    -ms-transition: background-color .35s ease, color .35s ease;
+	     -o-transition: background-color .35s ease, color .35s ease;
+	        transition: background-color .35s ease, color .35s ease;
+}
+li a:hover {
+	background-color: black;
+	color: white;
+}
+.menu a.active,
+.menu a.active:link,
+.menu a.active:active,
+.menu a.active:hover {
+	background-color: black;
+	color: white;
+}
+.radial {
+	border: 5px solid white;
+	box-shadow: -2px 2px 0px 0px rgba(0,0,0,.1),2px -2px 0px 0px rgba(0,0,0,.1);
+	border-radius: 100%;
+	background-color: #000;
+}
+img.radial.profile-photo {
+	display: block;
+	width: 220px;
+	height: 220px;
+}
+.profile-photo-frame {
+	position: relative;
+	display: inline-block;
+	width: 220px;
+	height: 220px;
+	will-change: transform;
+	-webkit-transition: -webkit-transform .7s ease-in-out;
+	   -moz-transition: transform .7s ease-in-out;
+	     -o-transition: transform .7s ease-in-out;
+	        transition: transform .7s ease-in-out;
+}
+.profile-photo-frame .profile-photo {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.profile-photo-frame .profile-photo-bw {
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+	opacity: 1;
+	will-change: opacity;
+	-webkit-transition: opacity .9s ease-in-out;
+	   -moz-transition: opacity .9s ease-in-out;
+	     -o-transition: opacity .9s ease-in-out;
+	        transition: opacity .9s ease-in-out;
+}
+.profile-photo-frame:hover {
+	-webkit-transform: scale(1.02);
+	        transform: scale(1.02);
+}
+.profile-photo-frame:hover .profile-photo-bw {
+	opacity: 0;
+}
+.deskripsi {
+	text-align: center;
+	margin-top: 20px;
+}
+.title {
+	font-family: 'Lato Black';
+	font-size: 48px;
+}
+.thin {
+	font-family: "Lato Light";
+}
+.box {
+	display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1024px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+.biograph {
+	padding-bottom: 10px; padding-top: 10px;
+	margin-bottom: 10px;
+}
+.biograph .thin {
+	font-size: 20px;
+	border-left: 3px solid rgba(0,0,0,.2);
+}
+.biograph .title {
+	font-size: 26px;
+	text-align: right;
+}
+.biograph > div:nth-child(n+3) {
+
+  margin-top: 15px;
+
+}
+
+.form {
+	width: 100%;
+}
+.form input {
+	font-family: 'Lato Black';
+}
+.form textarea {
+	font-family: 'Lato';
+	max-width: 100%;
+	min-height: 80px;
+	max-height: 150px;
+}
+.form input[type=text], .form textarea, .form input[type=email], .form button {
+	width: 100%;
+	padding: 10px;
+	font-size: 12pt;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	border:1px solid black;
+	outline: none;
+}
+.form input[type=text] {
+	width: 90%;
+}
+.form button {
+	font-size: 14pt;
+	width: 104%;
+	font-family: 'Lato Black';
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+	    -ms-transition: all .5s ease-in-out;
+	     -o-transition: all .5s ease-in-out;
+	        transition: all .5s ease-in-out;
+}
+.form button:hover {
+	background-color: #27AE60;
+	color: white;
+	border: 1px #2ECC71;
+}
+.form input[type=text]:focus, .form input[type=email]:focus, .form textarea:focus {
+	border: 1px solid gray;
+}
+.contact-note {
+	color: gray;
+	font-size: 11pt;
+}
+.social-panel {
+	padding: 19px 0 0 20px;
+}
+.social-title {
+	font-family: 'Lato Black';
+	font-size: 24px;
+	margin: 0 0 18px;
+	letter-spacing: 1px;
+}
+.social-links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.social-links li {
+	margin-bottom: 14px;
+}
+.social-link,
+.social-link:link,
+.social-link:active {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 14px 16px;
+	border: 1px solid rgba(0,0,0,.15);
+	background: rgba(255,255,255,.9);
+	color: black;
+	text-decoration: none;
+	-webkit-transition: background-color .35s ease, color .35s ease, -webkit-transform .35s ease, box-shadow .35s ease;
+	   -moz-transition: background-color .35s ease, color .35s ease, transform .35s ease, box-shadow .35s ease;
+	     -o-transition: background-color .35s ease, color .35s ease, transform .35s ease, box-shadow .35s ease;
+	        transition: background-color .35s ease, color .35s ease, transform .35s ease, box-shadow .35s ease;
+}
+.social-link:hover {
+	background: black;
+	color: white;
+	-webkit-transform: translateX(6px);
+	        transform: translateX(6px);
+	box-shadow: -6px 6px 0 rgba(0,0,0,.12);
+}
+.social-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	border: 1px solid currentColor;
+	border-radius: 100%;
+	font-size: 18px;
+	flex: 0 0 42px;
+}
+.social-text {
+	font-family: 'Lato Black';
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.at:before {
+	display: block;
+	content: ' ';
+	position: absolute;
+	left: 0;
+	height: 100px;
+	width: 30px;
+	background-color: black;
+	z-index: 9999;
+}
+.at:after {
+	display: block;
+	content: ' ';
+	position: absolute;
+	right: 0;
+	height: 100px;
+	width: 30px;
+	background-color: black;
+	z-index: 9999;
+}
+.scroll {
+	height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;  
+}
+.bottom {
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,.5);
+}
+.contact-techstack {
+	color: gray;
+	margin-top: 50px;
+}
+@media screen and (min-width: 1366px) {
+	.wrapper {
+		display: inline-block;
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    width: 1366px;
+	    height: 200px;
+	    margin: auto;
+	}
+	.icon {
+		display: block;
+	}
+	.Message {
+		font-size: 60px;
+	}
+
+}

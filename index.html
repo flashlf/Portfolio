@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIA Portofolio</title>
+	<meta name="description" content="Portofolio">
+	<meta name="author" content="M.I.A">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/shortcut/icon.ico" type="image/x-icon">
+	<link href="css/construct.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/unsemantic-grid-responsive.css" rel="stylesheet">
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/scrollReveal.js"></script>
+	<script src="js/initScroll.js"></script>
+</head>
+<body>
+<main class="page-home">
+	<div class="wrapper">
+		<div class="grid-container">
+			<div class="push-10 grid-60">
+				<br><br><big id="welcomeMsg" class="Message" data-sr="wait 2s then enter left move 500px over 1s"></big>
+			</div>
+			<div class="push-10 grid-20 hide-on-mobile icon" data-sr="enter and scale up 20% over 3s">
+				<img src="img/Circle.png" class="fa-spin-fast" width="200" height="200" alt="MIA logo circle">
+				<h1 class="title floated">MIA</h1>
+			</div>
+		</div>
+	</div>
+</main>
+
+<div class="bottom">
+	<div class="grid-container">
+		<div class="grid-80 push-10">
+			<nav class="menu">
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="work.html">Work</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="index.html" class="active">Home</a></li>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<script>
+	var container = document.getElementById('welcomeMsg');
+
+	var typewriter = new Typewriter(container, {
+		loop: false,
+		delay: 75,
+	});
+
+	typewriter
+		.pauseFor(3000)
+		.typeString(`Hi, I'm Imam.`)
+		.pauseFor(300)
+		.typeString('I develop software for both web and desktop platforms.')
+		.pauseFor(1000)
+		.start();
+
+</script>
+</body>
+</html>
