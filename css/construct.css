@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Pristina';
-  src: url('../fonts/Pristina.ttf');
-  src: url('../fonts/Pristina.ttf') format('truetype');
+  src: url('../fonts/Pristina.TTF');
+  src: url('../fonts/Pristina.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
